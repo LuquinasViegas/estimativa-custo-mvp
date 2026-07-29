@@ -26,7 +26,7 @@ O resultado deve mostrar Python 3.11.x ou 3.12.x.
 Abra o PowerShell e entre na pasta que contem `README.md`, `app` e `migrations`:
 
 ```powershell
-cd "C:\Users\sralo\OneDrive\Área de Trabalho\estimativa-custo\estimativa-custo"
+cd "C:\caminho_da_pasta"
 ```
 
 Para conferir se esta no lugar correto:
