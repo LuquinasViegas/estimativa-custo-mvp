@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimativa de Custo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main>
+        <h1>Estimativa de Custo</h1>
+        <p class="subtitulo">Preencha os dados do serviço para calcular uma faixa estimada de custo.</p>
+        <form id="form-estimativa">
+            <label for="tipo_servico">Tipo de serviço</label>
+            <select id="tipo_servico" name="tipo_servico" required><option value="">Carregando opções...</option></select>
+            <label for="metragem">Metragem (m²)</label>
+            <input type="number" id="metragem" name="metragem" min="0.01" step="0.01" required>
+            <label for="localizacao">Localização (UF)</label>
+            <select id="localizacao" name="localizacao" required><option value="">Carregando opções...</option></select>
+            <label for="nivel_acabamento">Nível de acabamento</label>
+            <select id="nivel_acabamento" name="nivel_acabamento" required><option value="">Carregando opções...</option></select>
+            <button type="submit">Calcular estimativa</button>
+        </form>
+        <div id="resultado" class="resultado oculto"></div>
+        <div id="erro" class="erro oculto"></div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
